@@ -1,5 +1,5 @@
 {
-  "name": "node-tal",
+  "name": "tal",
   "version": "0.1.0",
   "description": "TV Application Framework configuration library.",
   "main": "index.js",
