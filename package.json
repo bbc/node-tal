@@ -22,7 +22,7 @@
   "bugs": {
     "url": "https://github.com/oncletom/node-tal/issues"
   },
-  "peerDependencies": {
+  "optionalDependencies": {
     "tal-config": "~0.1.0"
   },
   "devDependencies": {
