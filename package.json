@@ -2,7 +2,7 @@
   "name": "tal",
   "version": "0.1.0",
   "description": "TV Application Framework configuration library.",
-  "main": "index.js",
+  "main": "lib/index.js",
   "scripts": {
     "test": "nodeunit test/"
   },

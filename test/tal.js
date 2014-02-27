@@ -1,7 +1,7 @@
 'use strict';
 
 var fs = require("fs");
-var tal = require("../index.js");
+var tal = require("../lib/helpers.js");
 var talConfig = require("tal-config");
 var sinon = require("sinon");
 var sandbox = sinon.sandbox.create();
