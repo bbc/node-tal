@@ -1,6 +1,6 @@
 {
   "name": "tal",
-  "version": "0.1.0",
+  "version": "0.2.0",
   "description": "TV Application Framework configuration library.",
   "main": "lib/index.js",
   "scripts": {
@@ -8,7 +8,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "git://github.com/oncletom/node-tal.git"
+    "url": "git://github.com/bbcrd/node-tal.git"
   },
   "keywords": [
     "tv",
@@ -20,13 +20,13 @@
   "author": "BBC Future Media",
   "license": "Apache-2",
   "bugs": {
-    "url": "https://github.com/oncletom/node-tal/issues"
+    "url": "https://github.com/bbcrd/node-tal/issues"
   },
   "optionalDependencies": {
     "tal-config": "~0.1.0"
   },
   "devDependencies": {
     "nodeunit": "~0.8.1",
-    "sinon": "~1.7.3"
+    "sinon": "^1.7.3"
   }
 }

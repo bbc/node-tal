@@ -10,12 +10,10 @@ npm install --save tal
 
 # Usage
 
-## Library Helpers
-
 ## Connect Middleware
 
 The [connect middleware](http://www.senchalabs.org/connect/) will automatically update the HTTP response
-MIME-Type as well as populating a `res.locals.tal` object.
+MIME-Type as well as populating a `res.locals.tal` object (see below).
 
 ```js
 // in app.js
@@ -71,6 +69,41 @@ This example is using [handlebars](http://handlebarsjs.com/) to illustrate how t
 <script src="/path/to/your/talApp/init.js"></script>
 </body>
 </html>
+```
+
+## Library Helpers
+
+In case you would like to tailor a specific use case, you can use the TAL helpers to build your own middleware or HTTP API.
+
+### Initialising
+
+```js
+var tal = require('tal').helpers;
+var helpers = new tal();
+```
+
+### Creating a device config
+
+The device config is provided by the `tal-config` package. See below how to override it and inject your own configuration package.
+
+```js
+var deviceConfig = helpers.getDeviceConfigFromRequest({ brand: 'panasonic', model: 'tv_2013' });
+```
+
+### Using device helpers
+
+From that point you can retrieve any device specific configuration, including the frontend TAL configuration object.
+
+[See the API more in details in the sourcecode](lib/helpers.js).
+
+### Providing your own device configurations
+
+Simply provide a module respecting the `tal-config` signature to the helper constructor.
+
+```js
+var tal = require('tal').helpers;
+var talConfig = require('./my/private/tal-config.js');
+var helpers = new tal(talConfig);
 ```
 
 # Testing
