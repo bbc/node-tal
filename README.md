@@ -1,6 +1,6 @@
 # node-tal [![Build Status](https://travis-ci.org/bbcrd/node-tal.png?branch=master)](https://travis-ci.org/bbcrd/node-tal)
 
-> Node.js backend library and connect middleware to serve your TAL application quickly.
+> Node.js backend library and connect middleware to serve your [TAL application](http://fmtvp.github.io/tal/) quickly.
 
 # Install
 
@@ -39,7 +39,7 @@ and are tailored for the requesting TV device:
 
 This example is using [handlebars](http://handlebarsjs.com/) to illustrate how to bootstrap a TAL application:
 
-```hbs
+```html
 // in layout.hbs
 
 {{{tal.doctype}}}
