@@ -17,7 +17,9 @@
     "connected",
     "tv"
   ],
-  "author": "BBC Future Media",
+  "author": [
+    "Thomas Parisot <thomas.parisot@bbc.co.uk> (https://oncletom.io)"
+  ],
   "license": "Apache-2",
   "bugs": {
     "url": "https://github.com/bbcrd/node-tal/issues"
