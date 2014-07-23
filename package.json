@@ -1,6 +1,6 @@
 {
   "name": "tal",
-  "version": "0.2.0",
+  "version": "0.3.0",
   "description": "TV Application Framework configuration library.",
   "main": "lib/index.js",
   "scripts": {
@@ -17,8 +17,9 @@
     "connected",
     "tv"
   ],
-  "author": [
-    "Thomas Parisot <thomas.parisot@bbc.co.uk> (https://oncletom.io)"
+  "author": "Thomas Parisot <thomas.parisot@bbc.co.uk> (https://oncletom.io)",
+  "contributors": [
+    "Chris Needham <https://github.com/chrisn>"
   ],
   "license": "Apache-2",
   "bugs": {

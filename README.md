@@ -12,15 +12,14 @@ npm install --save tal
 
 ## Connect Middleware
 
-The [connect middleware](http://www.senchalabs.org/connect/) will automatically update the HTTP response
+The [express 4.x middleware](http://expressjs.com/4x/api.html) will automatically update the HTTP response
 MIME-Type as well as populating a `res.locals.tal` object (see below).
 
 ```js
 // in app.js
 var app = express();
-var tal = require('tal');
 
-app.use(tal.middleware());
+app.use(require('tal').middleware());
 ```
 
 ### `res.locals.tal`
