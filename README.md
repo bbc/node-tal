@@ -22,6 +22,23 @@ var app = express();
 app.use(require('tal').middleware());
 ```
 
+A TAL application requires an Application ID, and this can be set either as an
+option to the middleware function:
+
+```js
+app.use(require('tal').middleware({ application_id: 'testapp' });
+```
+
+or in your `package.json` file:
+
+```js
+"tal": {
+  "default": {
+    "application_id": "testapp"
+  }
+}
+```
+
 ### `res.locals.tal`
 
 This object is populated for each HTTP request connected to the TAL middleware. It contains the following fields,
